@@ -1,0 +1,98 @@
+.menu, .about
+    display: grid
+    grid-area: about
+    background-color: #3AAFA9
+    color: #fff
+    grid-template-columns: 1fr
+    grid-template-rows: 100px 1fr auto
+    grid-template-areas: "menu" "img" "desc"
+    grid-row-gap: 10px
+    @media ( min-width: 1024px )
+        grid-template-columns: repeat(2, 45%)
+        grid-template-rows: 50px 1fr
+        column-gap: 10px
+        grid-row-gap: 10px
+        grid-template-areas: "menu menu" "img desc"
+
+.menu__btn
+    display: none
+    @media ( min-width: 1024px )
+        z-index: 2
+        display: block
+        grid-area: menu
+        margin-top: 20px
+        width: 30px
+        height: 30px
+        margin-left: 20px
+        margin-bottom: 15px
+        justify-self: end
+        &:hover
+            cursor: pointer
+
+.menu__items
+    grid-area: menu
+    z-index: 3
+    display: flex
+    flex-direction: row
+    height: 40px
+    list-style-type: none
+    color: #fff
+    transition: right 2s ease
+    &__close
+        display: none
+    @media ( min-width: 1024px )
+        display: block
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 100%
+        right: 0
+        transition: left 0.2s ease
+        &.active
+            top: 0
+            bottom: 0
+            left: 70%
+            right: 0
+            background-color: #fff
+            color: #000000b0
+        &__close
+            display: block
+            height: 40px
+            width: 100%
+            padding-bottom: 10px 
+            background-color: #3AAFA9
+            & img
+                width: 30px
+                height: 30px
+                padding-left: 10px
+                padding-top: 10px
+                &:hover
+                    cursor: pointer
+    &__item
+        flex-grow: 1
+        align-self: center
+        font-size: 18px
+        text-align: center
+        text-decoration: none
+        color: #fff
+        &:hover
+            cursor: pointer
+            text-decoration: underline
+        @media ( min-width: 1024px )
+            display: block
+            padding-bottom: 10px
+            background-color: #fff
+            color: #000000b0
+            font-size: 20px
+
+.about__img
+    grid-area: img
+    justify-self: center
+    width: 300px
+    border-radius: 25%
+    margin-bottom: 10px
+
+.about__text
+    grid-area: desc
+    text-align: justify
+    margin: 10px 20px
