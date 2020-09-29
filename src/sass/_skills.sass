@@ -1,0 +1,33 @@
+.skills
+    grid-area: skills
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    margin: 40px
+    &__skill
+        width: 150px
+        height: 150px
+        padding: 50px
+        margin: 10px
+        border-radius: 5%
+        border: #3AAFA9 solid 5px
+        transition: 1s
+        position: relative
+        overflow: hidden
+        &:hover &__des
+            opacity: 1
+            padding: 25px 0 
+        &__des
+            position: absolute
+            top: 0
+            left: 0
+            background-color: #3AAFA9
+            color: #fff
+            width: 100%
+            height: 100%
+            opacity: 0
+            transition: 0.4s
+            z-index: 10
+            

@@ -1,7 +1,13 @@
 import React from 'react';
 import menu from "../icons/burger.svg";
 import close from "../icons/close.svg";
-import me from "../img/120090798_396326408430009_5887312141444674031_n.jpg"
+import me from "../img/120090798_396326408430009_5887312141444674031_n.jpg";
+import htmll from "../icons/html-5.svg";
+import csss from "../icons/css-3.svg";
+import sasss from "../icons/sass.svg";
+import js from "../icons/javascript-1.svg";
+import reactt from "../icons/react.svg";
+import gitt from "../icons/github.svg";
 
 const Home = () => {
     const handleShowMenu = () => {
@@ -28,12 +34,12 @@ Now I’m working on my own projects which you can see in the section Projects.
 </p>
             </div>
             <div className="skills">
-                <div className="skills__skill1"><div className="skills__skill__des">I know how to create simple or more advanced structures of a page and how to use BEM.</div></div>
-                <div className="skills__skill2"><div className="skills__skill__des">I know how to create simple or more advanced styles of a page and how to use mixins.</div></div>
-                <div className="skills__skill3"><div className="skills__skill__des">I know how to create simple or more advanced styles of a page and how to use mixins.</div></div>
-                <div className="skills__skill4"><div className="skills__skill__des">Classes, objects, functions, axios are not strange to me.</div></div>
-                <div className="skills__skill5"><div className="skills__skill__des">I can create simple or more advanced projects. I know how to use hooks.</div></div>
-                <div className="skills__skill6"><div className="skills__skill__des">I know basis commands like: commit, push, pull, merge and how to use branches.</div></div>
+                <div className="skills__skill"><img className="skills__skill__icon" src={htmll} alt="html icon"/><div className="skills__skill__des">I know how to create simple or more advanced structures of a page and how to use BEM.</div></div>
+                <div className="skills__skill"><img className="skills__skill__icon" src={csss} alt="css icon"/><div className="skills__skill__des">I know how to create simple or more advanced styles of a page and how to use mixins.</div></div>
+                <div className="skills__skill"><img className="skills__skill__icon" src={sasss} alt="sass icon"/><div className="skills__skill__des">I know how to create simple or more advanced styles of a page and how to use mixins.</div></div>
+                <div className="skills__skill"><img className="skills__skill__icon" src={js} alt="javascript icon"/><div className="skills__skill__des">Classes, objects, functions, axios are not strange to me.</div></div>
+                <div className="skills__skill"><img className="skills__skill__icon" src={reactt} alt="react icon"/><div className="skills__skill__des">I can create simple or more advanced projects. I know how to use hooks.</div></div>
+                <div className="skills__skill"><img className="skills__skill__icon" src={gitt} alt="github icon"/><div className="skills__skill__des">I know basis commands like: commit, push, pull, merge and how to use branches.</div></div>
             </div>
             <div className="projects">
                 <div className="projects__project">
