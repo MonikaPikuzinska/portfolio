@@ -8,7 +8,11 @@ import sasss from "../icons/sass.svg";
 import js from "../icons/javascript-1.svg";
 import reactt from "../icons/react.svg";
 import gitt from "../icons/github.svg";
-
+import bookstore from "../img/bookstore.JPG";
+import quiz from "../img/quiz.JPG";
+import game from "../img/game.JPG";
+import marathon from "../img/marathon.JPG";
+import linkedin from "../icons/linkedin.svg";
 const Home = () => {
     const handleShowMenu = () => {
         document.querySelector('.menu__items').classList.toggle('active')
@@ -34,6 +38,7 @@ Now I’m working on my own projects which you can see in the section Projects.
 </p>
             </div>
             <div className="skills">
+                <h2 className="skills__title">Skills</h2>
                 <div className="skills__skill"><img className="skills__skill__icon" src={htmll} alt="html icon"/><div className="skills__skill__des">I know how to create simple or more advanced structures of a page and how to use BEM.</div></div>
                 <div className="skills__skill"><img className="skills__skill__icon" src={csss} alt="css icon"/><div className="skills__skill__des">I know how to create simple or more advanced styles of a page and how to use mixins.</div></div>
                 <div className="skills__skill"><img className="skills__skill__icon" src={sasss} alt="sass icon"/><div className="skills__skill__des">I know how to create simple or more advanced styles of a page and how to use mixins.</div></div>
@@ -42,32 +47,44 @@ Now I’m working on my own projects which you can see in the section Projects.
                 <div className="skills__skill"><img className="skills__skill__icon" src={gitt} alt="github icon"/><div className="skills__skill__des">I know basis commands like: commit, push, pull, merge and how to use branches.</div></div>
             </div>
             <div className="projects">
+                <h2 className="projects__title">Projects</h2>
                 <div className="projects__project">
-                    <div className="projects__project__img"></div>
+                    <a className="projects__project__min" href="#">
+                        <div className="projects__project__min__des">React, html, sass </div>
+                        <img className="projects__project__min__img" src={bookstore} alt="bookstore"/>
+                    </a>
                     <a className="projects__project__link">Live</a>
-                    <a className="projects__project__link">Code</a>
+                    <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/bookstore">Code</a>
                 </div>
                 <div className="projects__project">
-                    <div className="projects__project__img"></div>
-                    <a className="projects__project__link">Live</a>
-                    <a className="projects__project__link">Code</a>
+                    <a className="projects__project__min" href="https://monikapikuzinska.github.io/quiz-throne-of-glass/">
+                        <div className="projects__project__min__des">React, html, sass</div>
+                        <img className="projects__project__min__img" src={quiz} alt="quiz"/>
+                    </a>
+                    <a className="projects__project__link" href="https://monikapikuzinska.github.io/quiz-throne-of-glass/">Live</a>
+                    <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/quiz-throne-of-glass">Code</a>
                 </div>
                 <div className="projects__project">
-                    <div className="projects__project__img"></div>
-                    <a className="projects__project__link">Live</a>
-                    <a className="projects__project__link">Code</a>
+                    <a className="projects__project__min" href="https://monikapikuzinska.github.io/Catch_golden_snitch/">
+                        <div className="projects__project__min__des">Javascript, html, css</div>
+                        <img className="projects__project__min__img" src={game} alt="game"/>
+                    </a>
+                    <a className="projects__project__link" href="https://monikapikuzinska.github.io/Catch_golden_snitch/">Live</a>
+                    <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/Catch_golden_snitch">Code</a>
                 </div>
                 <div className="projects__project">
-                    <div className="projects__project__img"></div>
-                    <a className="projects__project__link">Live</a>
-                    <a className="projects__project__link">Code</a>
+                    <a className="projects__project__min" href="https://monikapikuzinska.github.io/book-marathon-app/">
+                        <div className="projects__project__min__des">React, html, sass</div>
+                        <img className="projects__project__min__img" src={marathon} alt="marathon"/>
+                    </a>
+                    <a className="projects__project__link" href="https://monikapikuzinska.github.io/book-marathon-app/">Live</a>
+                    <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/book-marathon-app">Code</a>
                 </div>
             </div>
             <div className="contact">
                 <h2 className="contact__title">Contact me</h2>
-                <div className="contact__link">git</div>
-                <div className="contact__link">linked</div>
-                <div className="contact__link">mail</div>
+                <a className="contact__link" href="https://github.com/MonikaPikuzinska"><img className="contact__link" src={gitt} alt="github link"/></a>
+                <a className="contact__link" href="#"><img className="contact__link" src={linkedin} alt="linkedin link"/></a>
                 <footer className="footer">&copy; Copyright 2020 Monika Pikuzińska</footer>
             </div>
         </div>
