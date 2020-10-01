@@ -13,31 +13,32 @@ import quiz from "../img/quiz.JPG";
 import game from "../img/game.JPG";
 import marathon from "../img/marathon.JPG";
 import linkedin from "../icons/linkedin.svg";
+import mail from "../icons/email.svg";
+
 const Home = () => {
     const handleShowMenu = () => {
         document.querySelector('.menu__items').classList.toggle('active')
       };
-
     return ( 
         <div className="container">
             <nav className="menu">
                 <img className="menu__btn" src={menu} onClick={handleShowMenu} alt="menu button"/>
                 <ul className="menu__items">
                     <div className="menu__items__close" onClick={handleShowMenu}><img src={close} alt="close menu button"/></div>
-                    <li className="menu__items__item"><a className="menu__items__item" href="#">About me</a></li>
-                    <li className="menu__items__item"><a className="menu__items__item" href="#">Skills</a></li>
-                    <li className="menu__items__item"><a className="menu__items__item" href="#">Projects</a></li>
-                    <li className="menu__items__item"><a className="menu__items__item" href="#">Contact</a></li>
+                    <li className="menu__items__item"><a className="menu__items__item" href="#about">About me</a></li>
+                    <li className="menu__items__item"><a className="menu__items__item" href="#skills">Skills</a></li>
+                    <li className="menu__items__item"><a className="menu__items__item" href="#projects">Projects</a></li>
+                    <li className="menu__items__item"><a className="menu__items__item" href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div className="about">
+            <div className="about" id="about">
                 <img className="about__img" src={me} alt="photo"/>
                 <p className="about__text">My adventure with programming started in 2018 from the Python language. I participated in a Python course and I wrote a few projects in this language. 
 During my master studies I chose a specialization that is a combination of chemistry and bioinformatics. During classes I was coding in C++ and Python.
 Now I’m working on my own projects which you can see in the section Projects.
 </p>
             </div>
-            <div className="skills">
+            <div className="skills" id="skills">
                 <h2 className="skills__title">Skills</h2>
                 <div className="skills__skill"><img className="skills__skill__icon" src={htmll} alt="html icon"/><div className="skills__skill__des">I know how to create simple or more advanced structures of a page and how to use BEM.</div></div>
                 <div className="skills__skill"><img className="skills__skill__icon" src={csss} alt="css icon"/><div className="skills__skill__des">I know how to create simple or more advanced styles of a page and how to use mixins.</div></div>
@@ -46,7 +47,7 @@ Now I’m working on my own projects which you can see in the section Projects.
                 <div className="skills__skill"><img className="skills__skill__icon" src={reactt} alt="react icon"/><div className="skills__skill__des">I can create simple or more advanced projects. I know how to use hooks.</div></div>
                 <div className="skills__skill"><img className="skills__skill__icon" src={gitt} alt="github icon"/><div className="skills__skill__des">I know basis commands like: commit, push, pull, merge and how to use branches.</div></div>
             </div>
-            <div className="projects">
+            <div className="projects" id="projects">
                 <h2 className="projects__title">Projects</h2>
                 <div className="projects__project">
                     <a className="projects__project__min" href="#">
@@ -81,8 +82,9 @@ Now I’m working on my own projects which you can see in the section Projects.
                     <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/book-marathon-app">Code</a>
                 </div>
             </div>
-            <div className="contact">
+            <div className="contact" id="contact">
                 <h2 className="contact__title">Contact me</h2>
+                <img className="contact__mailImg" src={mail} alt="mail icon"/><p className="contact__mailDes">monika.pikuzinska01@gmail.com</p>
                 <a className="contact__link" href="https://github.com/MonikaPikuzinska"><img className="contact__link" src={gitt} alt="github link"/></a>
                 <a className="contact__link" href="#"><img className="contact__link" src={linkedin} alt="linkedin link"/></a>
                 <footer className="footer">&copy; Copyright 2020 Monika Pikuzińska</footer>
