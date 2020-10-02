@@ -50,11 +50,11 @@ Now I’m working on my own projects which you can see in the section Projects.
             <div className="projects" id="projects">
                 <h2 className="projects__title">Projects</h2>
                 <div className="projects__project">
-                    <a className="projects__project__min" href="#">
+                    <a className="projects__project__min" href="https://monikapikuzinska.github.io/bookstore/">
                         <div className="projects__project__min__des">React, html, sass </div>
                         <img className="projects__project__min__img" src={bookstore} alt="bookstore"/>
                     </a>
-                    <a className="projects__project__link">Live</a>
+                    <a className="projects__project__link" href="https://monikapikuzinska.github.io/bookstore/">Live</a>
                     <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/bookstore">Code</a>
                 </div>
                 <div className="projects__project">
