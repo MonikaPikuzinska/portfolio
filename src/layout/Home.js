@@ -34,8 +34,8 @@ const Home = () => {
             <div className="about" id="about">
                 <img className="about__img" src={me} alt="photo"/>
                 <p className="about__text">My adventure with programming started in 2018 from the Python language. I participated in a Python course and I wrote a few projects in this language. 
-During my master studies I chose a specialization that is a combination of chemistry and bioinformatics. During classes I was coding in C++ and Python.
-Now I’m working on my own projects which you can see in the section Projects.
+During my master studies, I chose a specialization that is a combination of chemistry and bioinformatics. My classes focused on coding in C++ and Python.
+Currently, I work on my own projects, which you can see in the Projects section.
 </p>
             </div>
             <div className="skills" id="skills">
