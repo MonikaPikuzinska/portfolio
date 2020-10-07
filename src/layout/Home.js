@@ -86,7 +86,7 @@ Currently, I work on my own projects, which you can see in the Projects section.
                 <h2 className="contact__title">Contact me</h2>
                 <img className="contact__mailImg" src={mail} alt="mail icon"/><p className="contact__mailDes">monika.pikuzinska01@gmail.com</p>
                 <a className="contact__link" href="https://github.com/MonikaPikuzinska"><img className="contact__link" src={gitt} alt="github link"/></a>
-                <a className="contact__link" href="#"><img className="contact__link" src={linkedin} alt="linkedin link"/></a>
+                <a className="contact__link" href="https://www.linkedin.com/in/monika-pikuzi%C5%84ska-6452941b9/"><img className="contact__link" src={linkedin} alt="linkedin link"/></a>
                 <footer className="footer">&copy; Copyright 2020 Monika Pikuzińska</footer>
             </div>
         </div>
