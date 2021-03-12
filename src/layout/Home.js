@@ -57,14 +57,15 @@ Currently, I work on my own projects, which you can see in the Projects section.
                     <a className="projects__project__link" href="https://monikapikuzinska.github.io/bookstore/">Live</a>
                     <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/bookstore">Code</a>
                 </div>
-                {/* <div className="projects__project">
-                    <a className="projects__project__min" href="https://monikapikuzinska.github.io/quiz-throne-of-glass/">
-                        <div className="projects__project__min__des">React, html, sass</div>
+                <div className="projects__project"> 
+                    <a className="projects__project__min" href="https://monikapikuzinska.github.io/book-quiz/">
+                        <div className="projects__project__min__des">React, html, tailwind css, i18n</div>
                         <img className="projects__project__min__img" src={quiz} alt="quiz"/>
                     </a>
-                    <a className="projects__project__link" href="https://monikapikuzinska.github.io/quiz-throne-of-glass/">Live</a>
-                    <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/quiz-throne-of-glass">Code</a>
-                </div> */}
+                    <a className="projects__project__link" href="https://monikapikuzinska.github.io/book-quiz/">Live</a>
+                    <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/book-quiz">Code</a>
+                    <a className="projects__project__link" href="https://github.com/MonikaPikuzinska/book-quiz/tree/json-server">JSON-Server version</a>
+                </div>
                 <div className="projects__project">
                     <a className="projects__project__min" href="https://monikapikuzinska.github.io/Catch_golden_snitch/">
                         <div className="projects__project__min__des">Javascript, html, css</div>
